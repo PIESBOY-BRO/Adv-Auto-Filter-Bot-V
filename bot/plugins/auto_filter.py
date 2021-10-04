@@ -201,9 +201,10 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:
-            await bot.send_message(
-                chat_id = update.chat.id,
-                text=f"Found {(len_results)} Results For Your Query: <code>{query}</code>",
+            awaitbot.send_photo(
+                chat_id=update.chat.id,
+                photo="https://telegra.ph/file/12204630b37104f668cd5.jpg",
+                caption=f"<b>𝐆𝐫𝐨𝐮𝐩:- <b>@Movie_World_00</b> \n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞:- {query} \n𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐨𝐮𝐧𝐝:- {(len_results)} \n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲:- {update.from_user.mention} \n\n𝗣𝗿𝗲𝘀𝘀 𝗧𝗵𝗲 𝗗𝗼𝘄𝗻 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗵𝗲 𝗙𝗶𝗹𝗲 \n\nസിനിമ ലഭിക്കാൻ താഴെ കാണുന്ന ലിംഗുകളിൽ ക്ലിക്ചെയ്തശേഷം  𝐒𝐓𝐀𝐑𝐓  ബട്ടനിൽ ക്ലിക്ചെയ്യുക👇</b>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
