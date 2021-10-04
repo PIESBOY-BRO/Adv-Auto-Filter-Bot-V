@@ -46,8 +46,8 @@ class Translation(object):
             
 @Movie_World_00
 """
-     Bot</code>
-    
+     
+
     ABOUT_TEXT = """<b>➥ Name</b> : <code> 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 ⓥ  Bot</code>
     
 <b>➥ Creator</b> : <b><i><a href="https://t.me/PIES_BOY">𝐏𝐈𝐄𝐒𝐁𝐎𝐘 ⎋</a></i></b>
